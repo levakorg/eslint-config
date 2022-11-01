@@ -1,0 +1,55 @@
+{
+  "private": false,
+  "main": "index.js",
+  "version": "1.0.0",
+  "name": "@levakorg/eslint-config",
+  "description": "Eslint config levakorg org's",
+  "author": "levakorg authors <levakorg@gmail.com>",
+  "homepage": "https://github.com/levakorg/eslint-config",
+  "repository": "https://github.com/levakorg/eslint-config",
+  "bugs": "https://github.com/levakorg/eslint-config/issues",
+  "license": "MIT",
+  "keywords": [
+    "eslint",
+    "eslint-config"
+  ],
+  "files": [
+    "lib",
+    "LICENSE",
+    "README.md",
+    "TODO.md",
+    "CHANGELOG.md",
+    "index.js",
+    ".eslintrc.js"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "prettier": "prettier check .",
+    "prettier:fix": "prettier --write .",
+    "eslint": "eslint . --ext .json,.cjs,.mjs,.js,.ts,.jsx,.tsx,.vue,.svelte",
+    "eslint:fix": "eslint . --ext .json,.cjs,.mjs,.js,.ts,.jsx,.tsx,.vue,.svelte --fix",
+    "format": "yarn prettier:fix && yarn eslint:fix"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-n": "^15.4.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-regexp": "^1.9.0",
+    "eslint-plugin-unused-imports": "^2.0.0"
+  },
+  "devDependencies": {
+    "@levakorg/prettier-config": "^1.0.0",
+    "eslint": "^8.26.0",
+    "prettier": "^2.7.1"
+  },
+  "peerDependencies": {
+    "eslint": "^8.26.0",
+    "prettier": "^2.7.1"
+  }
+}
