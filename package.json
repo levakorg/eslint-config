@@ -1,7 +1,7 @@
 {
   "private": false,
   "main": "index.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "@levakorg/eslint-config",
   "description": "Eslint config levakorg org's",
   "author": "levakorg authors <levakorg@gmail.com>",
